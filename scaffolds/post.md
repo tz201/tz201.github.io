@@ -1,7 +1,7 @@
 ---
 title: {{ title }}
 date: {{ date }}
-author: hojun
+author: tz201
 avatar: /img/avatar.webp
 authorLink: tz201.github.io
 authorAbout: 人?
