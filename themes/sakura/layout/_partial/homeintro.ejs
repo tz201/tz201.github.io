@@ -1,17 +1,39 @@
 <div class="home-intro">
 
-    <h2>
-        <%= theme.homeIntro.title %>
-    </h2>
+
+    <!-- Introduction 分割线 -->
+
+    <div class="intro-title">
+
+        <span class="intro-icon">
+            <i class="fa fa-user"></i>
+        </span>
+
+        <span>
+            introduction
+        </span>
+
+    </div>
 
 
-    <p>
-        <%- theme.homeIntro.content.replace(/\n/g,'<br>') %>
-    </p>
+
+    <div class="intro-card">
+
+        <h2>
+            <%= theme.homeIntro.title %>
+        </h2>
 
 
-    <p class="motto">
-        <%= theme.homeIntro.motto %>
-    </p>
+        <p>
+            <%- theme.homeIntro.content.replace(/\n/g,'<br>') %>
+        </p>
+
+
+        <p class="motto">
+            <%= theme.homeIntro.motto %>
+        </p>
+
+    </div>
+
 
 </div>

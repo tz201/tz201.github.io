@@ -7771,3 +7771,28 @@ img[src*="#in-center"] {
     display:block;
     text-align:center
 }
+.toc {
+
+    background:white;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.12);
+
+}
+
+
+.toc-title {
+
+    color:#3498db;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    margin-bottom:15px;
+
+}

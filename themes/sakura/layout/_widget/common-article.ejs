@@ -37,24 +37,6 @@
             <hr>
           </header>
         <% } %>
-        <div class="article-wrapper">
-          <div class="entry-content">
-            <%- post.content %>
-          </div>
-		  
-          <aside class="article-toc">
-            <div class="toc-title">
-              <i class="fa fa-list"></i>
-              目录
-            </div>
-
-            <%- toc(post.content,{
-              list_number:true,
-              max_depth:4
-            }) %>
-
-          </aside>
-        </div>
         <!-- .entry-content -->
         <footer class="post-footer">
           <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
@@ -80,8 +62,18 @@
         </footer><!-- .entry-footer -->
       </article>
       <!-- #post-## -->
-      <div class="toc-container" style="height: 1053px;">
-      <div class="toc" style="background: none;"></div>
+      <div class="toc-container">
+        <div class="toc">
+          <div class="toc-title">
+            <i class="fa fa-list"></i>
+            目录
+          </div>
+
+          <%- toc(post.content,{
+            list_number:true,
+            max_depth:4
+          }) %>
+        </div>
       </div>
       <section class="post-squares nextprev">
         <% if (post.prev){ %>
