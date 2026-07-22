@@ -48,8 +48,23 @@ siteBuildingTime: 07/22/2026
 
 
 # cover info config
-coverTitle: 
-coverDescription: tz201's blog
+coverTitle: tz201's blog
+coverDescription: >
+  Algorithm · C++ · OI · Life
+  
+
+homeIntro:
+  enable: true
+  title: 👋 Hi, I'm tz201
+  content: >
+    一个热爱算法和编程的博客。
+
+    记录 C++、
+    OI、
+    Web、
+    学习生活。
+
+  motto: Stay hungry, stay foolish.
 
 #social
 social:
