@@ -37,12 +37,23 @@
             <hr>
           </header>
         <% } %>
-        <div class="entry-content">
-          <%- post.content %>
-          <!-- <p><img class="alignnone size-medium wp-image-4" data-src="http://127.0.0.1/wordpress/wp-content/uploads/2018/12/QQ图片20181122223241-300x300.jpg" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.0.2/img/svg/loader/trans.ajax-spinner-preloader.svg" onerror="imgError(this)" alt="" width="300" height="300" srcset="http://127.0.0.1/wordpress/wp-content/uploads/2018/12/QQ图片20181122223241-300x300.jpg 300w, http://127.0.0.1/wordpress/wp-content/uploads/2018/12/QQ图片20181122223241-150x150.jpg 150w, http://127.0.0.1/wordpress/wp-content/uploads/2018/12/QQ图片20181122223241-768x768.jpg 768w, http://127.0.0.1/wordpress/wp-content/uploads/2018/12/QQ图片20181122223241-1024x1024.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px"></p>
-          <noscript><img class="alignnone size-medium wp-image-4" src="http://127.0.0.1/wordpress/wp-content/uploads/2018/12/QQ图片20181122223241-300x300.jpg" alt="" width="300" height="300" srcset="http://127.0.0.1/wordpress/wp-content/uploads/2018/12/QQ图片20181122223241-300x300.jpg 300w, http://127.0.0.1/wordpress/wp-content/uploads/2018/12/QQ图片20181122223241-150x150.jpg 150w, http://127.0.0.1/wordpress/wp-content/uploads/2018/12/QQ图片20181122223241-768x768.jpg 768w, http://127.0.0.1/wordpress/wp-content/uploads/2018/12/QQ图片20181122223241-1024x1024.jpg 1024w" sizes="(max-width: 300px) 100vw, 300px" /></p></noscript>
-          <p>欢迎使用WordPress。这是您的第一篇文章。编辑或删除它，然后开始写作吧！</p>
-          <h2 style="opacity:0;max-height:0;margin:0">Comments</h2> -->
+        <div class="article-wrapper">
+          <div class="entry-content">
+            <%- post.content %>
+          </div>
+		  
+          <aside class="article-toc">
+            <div class="toc-title">
+              <i class="fa fa-list"></i>
+              目录
+            </div>
+
+            <%- toc(post.content,{
+              list_number:true,
+              max_depth:4
+            }) %>
+
+          </aside>
         </div>
         <!-- .entry-content -->
         <footer class="post-footer">
