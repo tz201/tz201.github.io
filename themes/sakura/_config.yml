@@ -1,0 +1,69 @@
+# site name
+siteName: tz201 blog
+shortName: tz201
+
+menus:
+  首页: { path: /, fa: fa-fort-awesome faa-shake }
+  归档: { path: /archives, fa: fa-archive faa-shake, submenus: { 
+    技术: {path: /categories/技术/, fa: fa-code }, 
+    生活: {path: /categories/生活/, fa: fa-file-text-o }, 
+    资源: {path: /categories/资源/, fa: fa-cloud-download }, 
+    随想: {path: /categories/随想/, fa: fa-commenting-o },
+    转载: {path: /categories/转载/, fa: fa-book }
+  } }
+  清单: { path: javascript:;, fa: fa-list-ul faa-vertical, submenus: { 
+    书单: {path: /tags/悦读/, fa: fa-th-list faa-bounce }, 
+    番组: {path: /video, fa: fa-film faa-vertical }, 
+    歌单: {path: /music, fa: fa-headphones },
+    图集: {path: /tags/图集/, fa: fa-photo }
+  } }
+  留言板: { path: /comment, fa: fa-pencil-square-o faa-tada }
+  友人帐: { path: /links, fa: fa-link faa-shake }
+  赞赏: { path: /donate, fa: fa-heart faa-pulse }
+  关于: { path: /, fa: fa-leaf faa-wrench , submenus: { 
+    我？: {path: /about, fa: fa-meetup}, 
+    主题: {path: /theme-sakura, fa: iconfont icon-sakura },
+    Lab: {path: /lab, fa: fa-cogs },
+  } }
+  客户端: { path: /client, fa: fa-android faa-vertical }
+  RSS: { path: /atom.xml, fa: fa-rss faa-pulse }
+
+# full https model which means #Content-Security-Policy = upgrade-insecure-requests# in meat tag
+fullHttps: false
+
+# favicon and site master avatar
+favicon: /img/favicon.ico
+avatar: /img/avatar.webp
+
+# Home page sort type: -1: newer first，1: older first.
+homePageSortType: -1
+# Home page article shown number)
+homeArticleShown: 10
+# bg
+bgn: 8
+
+
+# your site build time or founded date
+siteBuildingTime: 07/22/2026
+
+
+# cover info config
+coverTitle: 
+coverDescription: tz201's blog
+
+#social
+social:
+  github: ['http://github.com/honjun','https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/github.png']
+  sina: ['http://weibo.com/mashirozx?is_all=1','https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/sina.png']
+  wangyiyun: ['http://weibo.com/mashirozx?is_all=1','https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/wangyiyun.png']
+  zhihu: ['http://weibo.com/mashirozx?is_all=1','https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/zhihu.png']
+  email: ['http://weibo.com/mashirozx?is_all=1','https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/sns/email.svg']
+
+
+
+
+# Git-pages server info
+gitPageServerName: Github Pages
+gitPageServerUrl: https://github.com/
+codingPageServerName: Coding Pages
+codingPageServerUrl: https://pages.coding.me
