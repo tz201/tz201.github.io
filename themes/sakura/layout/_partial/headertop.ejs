@@ -1,0 +1,49 @@
+<div class="headertop filter-dot">
+  <div id="banner_wave_1"></div>
+  <div id="banner_wave_2"></div>
+  <figure id="centerbg" class="centerbg">
+    <div class="focusinfo no-select">
+      <div class="header-tou">
+        <a href="https://sakura.2heng.xin">
+          <img src="https://wx1.sinaimg.cn/small/006bYVyvgy1ftand2qurdj303c03cdfv.jpg">
+        </a>
+      </div>
+      <div class="header-info">
+        <p><%= config.description %></p>
+        <div class="top-social_v2">
+          <li id="bg-pre">
+            <img class="flipx" src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/next-b.svg">
+          </li>
+          <% if (theme.social) {%>
+            <% for (i in theme.social) {%>
+              <li>
+                <a href="<%= theme.social[i][0]%>" target="_blank" class="social-github" title="github">
+                  <img src="<%= theme.social[i][1]%>">
+                </a>
+              </li>
+            <% } %>
+          <% } %>
+          <li id="bg-next">
+            <img src="https://cdn.jsdelivr.net/gh/moezx/cdn@3.1.9/img/Sakura/images/next-b.svg">
+          </li>
+        </div>
+      </div>
+    </div>
+  </figure>
+  <div id="video-container" style="">
+    <video style="object-fit: fill" id="bgvideo" class="video" video-name="" src="" width="auto" preload="auto">
+    </video>
+    <div id="video-btn" class="loadvideo videolive">
+    </div>
+    <div id="video-add">
+    </div>
+    <div class="video-stu">
+    </div>
+  </div>
+  <div class="headertop-down faa-float animated" onclick="headertop_down()">
+    <span>
+      <i class="fa fa-chevron-down" aria-hidden="true">
+      </i>
+    </span>
+  </div>
+</div>
