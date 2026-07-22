@@ -158,7 +158,7 @@ theme: sakura
 # Deployment
 deploy:
   type: git
-  repo: https://github.com/你的用户名/你的用户名.github.io.git
+  repo: https://github.com/tz201/tz201.github.io.git
   branch: gh-pages
 
 # Markdown
