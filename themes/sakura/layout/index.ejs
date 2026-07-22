@@ -1,37 +1,90 @@
 </div>
 <div class="outer">
+
   <section id="main">
+
     <div id="content" class="site-content">
-      <div class="notice" style="margin-top:60px">
-        <i class="iconfont icon-notification">
-        </i>
-        <div class="notice-content">
-        主题已经开源，客户端也上线啦~&gt;ω&lt;</div>
-      </div>
-      <%- partial('_partial/startdash') %>
-      <!-- 首页简介 -->
-      <% if(theme.homeIntro && theme.homeIntro.enable){ %>
-      <%- partial('_partial/homeintro') %>
-      <% } %>
-      <div id="primary" class="content-area">
-        <main id="main" class="site-main" role="main">
-          <h1 class="main-title" style="font-family: 'Ubuntu', sans-serif;">
-          <i class="fa fa-envira" aria-hidden="true">
-          </i>
-          Discovery</h1>
-          <%- partial('_partial/archive', {pagination: 2, index: true}) %>
-        </main>
-          <!-- 首页默认取最最新文章集 -->
-        <% if (page.total > 1){ %>
-          <nav class="navigator">
-            <% var prev_text = __('prev');var next_text = __('next');%>
-            <%- paginator({
-              prev_text: prev_text,
-              next_text: next_text
+
+
+      <!-- 第一屏：首页头图 -->
+
+      <section class="snap-page home-cover-section">
+
+        <%- partial('_partial/homecover') %>
+
+      </section>
+
+
+
+      <!-- 第二屏：介绍 -->
+
+      <section class="snap-page home-intro-section">
+
+        <%- partial('_partial/homeintro') %>
+
+      </section>
+
+
+
+      <!-- 第三部分：文章 -->
+
+      <section class="home-post-section">
+
+
+        <%- partial('_partial/startdash') %>
+
+
+        <div id="primary" class="content-area">
+
+          <main id="main" class="site-main" role="main">
+
+
+            <h1 class="main-title" style="font-family:'Ubuntu',sans-serif;">
+
+              <i class="fa fa-envira" aria-hidden="true"></i>
+
+              Discovery
+
+            </h1>
+
+
+            <%- partial('_partial/archive',{
+              pagination:2,
+              index:true
             }) %>
+
+
+          </main>
+
+
+          <% if(page.total > 1){ %>
+
+          <nav class="navigator">
+
+            <%- paginator({
+
+              prev_text:__('prev'),
+
+              next_text:__('next')
+
+            }) %>
+
+
           </nav>
-        <% } %>
-      </div>
+
+          <% } %>
+
+
+        </div>
+
+
+      </section>
+
+
     </div>
+
   </section>
+
 </div>
+</div>
+

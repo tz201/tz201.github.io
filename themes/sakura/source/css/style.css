@@ -6675,19 +6675,7 @@ progress {
 .art-content #archives .al_mon_list .al_mon:after,.art .art-content .al_mon_list .al_post_list>li:after {
     background:#0bf
 }
-.toc-container {
-    z-index:98;
-    width:200px;
-    height:100%;
-    background-color:rgba(255,255,255,0);
-    transform:translateX(0);
-    right:calc((100% - 950px - 250px)/2);
-    position:absolute !important;
-    top:480px;
-    position:absolute;
-    padding-top:10px;
-    padding-bottom:10px
-}
+
 .toc {
     position:-webkit-sticky;
     position:sticky;
@@ -7794,5 +7782,467 @@ img[src*="#in-center"] {
     font-weight:bold;
 
     margin-bottom:15px;
+
+}
+/* =====================
+   Hero Full Screen
+===================== */
+
+
+.home-cover-section {
+
+    width:100vw;
+
+    height:100vh;
+
+    position:relative;
+
+    overflow:hidden;
+
+    margin-left:calc(50% - 50vw);
+
+}
+
+
+
+.home-cover {
+
+    width:100vw;
+
+    height:100vh;
+
+    position:relative;
+
+
+    background-image:url('/img/banner.png');
+
+    background-size:cover;
+
+    background-position:center center;
+
+    background-repeat:no-repeat;
+
+}
+
+
+
+.cover-mask {
+
+    position:absolute;
+
+
+    top:0;
+
+    left:0;
+
+
+    width:100%;
+
+    height:100%;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    text-align:center;
+
+
+    color:white;
+
+
+    background:rgba(0,0,0,.35);
+
+}
+
+
+
+.cover-mask h1 {
+
+    margin:0;
+
+    font-size:60px;
+
+}
+
+
+
+.cover-mask p {
+
+    margin-top:20px;
+
+    font-size:25px;
+
+}
+
+
+
+.scroll-down {
+
+    position:absolute;
+
+    bottom:40px;
+
+    font-size:40px;
+
+}
+
+
+/* =====================
+   第二屏 Intro
+===================== */
+
+
+.home-intro-section {
+
+
+    height:100vh;
+
+
+    display:flex;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+}
+
+
+
+.intro-page {
+
+
+    width:100%;
+
+
+    height:100%;
+
+
+    display:flex;
+
+
+    flex-direction:column;
+
+
+    justify-content:center;
+
+
+    align-items:center;
+
+
+    text-align:center;
+
+
+}
+
+
+
+.intro-title {
+
+
+    font-size:35px;
+
+
+    margin-bottom:40px;
+
+
+}
+
+
+
+.intro-page h1 {
+
+
+    font-size:45px;
+
+
+}
+
+
+
+.intro-page p {
+
+
+    font-size:22px;
+
+
+    line-height:2;
+
+
+}
+
+
+
+
+
+/* =====================
+   第三部分文章
+===================== */
+
+
+.home-post-section {
+    min-height:100vh;
+}
+
+html {
+
+    scroll-behavior:smooth;
+
+}
+
+/* =====================
+   Article + TOC Layout
+===================== */
+
+
+/* 文章主体 */
+
+#primary {
+
+    width:850px;
+
+}
+
+
+/* 文章区域左移 */
+
+.single-post .site-content {
+
+
+    width:1150px;
+
+
+    margin-left:calc(50% - 575px);
+
+
+}
+
+
+
+/* 正文 */
+
+.entry-content {
+
+
+    width:820px;
+
+
+}
+
+
+
+/* 右侧目录 */
+
+
+/* =====================
+   Tocbot Fixed Side
+===================== */
+
+
+#main,
+#primary,
+.site-content {
+
+    overflow:visible;
+
+}
+
+
+
+/* =====================
+   Tocbot Sticky Sidebar
+===================== */
+
+
+.toc-container {
+
+    position:absolute;
+
+    width:260px;
+
+    left:calc(100% + 40px);
+
+    top:0;
+
+}
+
+
+
+.toc-box {
+
+
+    position:sticky;
+
+    position:-webkit-sticky;
+
+
+    top:100px;
+
+
+    width:260px;
+
+
+    padding:20px;
+
+
+    background:#fff;
+
+
+    border-radius:12px;
+
+
+    box-shadow:0 5px 20px rgba(0,0,0,.12);
+
+
+}
+/* =====================
+   Tocbot
+===================== */
+
+
+#main{
+
+    position:relative;
+
+}
+
+.toc-title{
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    margin-bottom:15px;
+
+}
+
+
+
+/* tocbot */
+
+.js-toc a{
+
+
+    color:#666;
+
+    text-decoration:none;
+
+    line-height:28px;
+
+
+}
+
+
+
+.js-toc a:hover{
+
+	color:#fc3
+
+}
+
+
+
+.toc-link.is-active-link{
+
+
+    color:##fc3;
+
+    font-weight:bold;
+
+
+}
+
+
+
+.toc-list-item{
+
+
+    margin:5px 0;
+
+
+}
+
+/* =====================
+   Tocbot Level Spacing
+===================== */
+
+
+/* 一级目录 */
+.js-toc > .toc-list {
+    padding-left:0;
+}
+
+
+/* 二级 */
+.js-toc .toc-list-item .toc-list {
+    padding-left:20px;
+}
+
+
+/* 三级 */
+.js-toc .toc-list-item .toc-list .toc-list {
+    padding-left:25px;
+}
+
+
+/* 四级 */
+.js-toc .toc-list-item .toc-list .toc-list .toc-list {
+    padding-left:30px;
+}
+
+
+/* 每一项 */
+.js-toc .toc-list-item {
+
+    margin-left:5px;
+
+}
+
+/* =====================
+   Tocbot Sticky Sidebar
+===================== */
+
+.toc-container {
+
+    position:sticky;
+
+    position:-webkit-sticky;
+
+    top:100px;
+
+    width:260px;
+	
+	height:0;
+
+    margin-left:calc(100% + 40px);
+
+    z-index:99;
+
+}
+
+
+.toc-box {
+
+    width:260px;
+
+    background:#fff;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    box-shadow:
+    0 5px 20px rgba(0,0,0,.12);
 
 }

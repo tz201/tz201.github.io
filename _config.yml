@@ -194,3 +194,16 @@ live2d:
 
   mobile:
     show: true
+
+
+markdown:
+  render:
+    html: true
+    xhtmlOut: true
+    breaks: true
+    linkify: true
+
+markdown_it_anchor:
+  permalink: true
+  permalinkClass: header-anchor
+  permalinkSymbol: '#'

@@ -41,3 +41,27 @@ if (/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
 <script type="text/javascript" src="/js/lib.min.js"></script>
 <script type="text/javascript" src="/js/sakura-app.js"></script>
 <script type="text/javascript" src="/js/InsightSearch.js"></script>
+
+<script src="/js/home-scroll.js"></script>
+<script src="/js/toc-follow.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/tocbot@4.20.1/dist/tocbot.min.js"></script>
+
+
+<script>
+tocbot.init({
+
+    tocSelector: '.js-toc',
+
+    contentSelector: '.entry-content',
+
+    headingSelector:'h1,h2,h3,h4',
+
+    scrollSmooth:true,
+
+    headingsOffset:100,
+
+    scrollSmoothOffset:-100
+
+});
+</script>

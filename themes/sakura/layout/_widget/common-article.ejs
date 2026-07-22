@@ -9,13 +9,13 @@
         <%- post.title %></h1>
         <p class="entry-census">
           <span>
-            <a href="http://127.0.0.1/wordpress/?author=1">
-              <img src="http://gravatar.shino.cc/avatar/a2897ea8e93cf772b0fb482ac8951cc2?s=96&amp;d=mm&amp;r=g">
+            <a href="https://tz201.github.io">
+              <img src="/img/avatar.webp">
             </a>
           </span>
           <span>
-            <a href="http://127.0.0.1/wordpress/?author=1">
-            hojun</a>
+            <a href="https://tz201.github.io">
+            tz201</a>
           </span>
           <span class="bull">
           ·</span>
@@ -27,6 +27,27 @@
   <% } %>
   <div id="content" class="site-content"> <div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
+		
+		<aside class="toc-container">
+
+    <div class="toc-box">
+
+        <div class="toc-title">
+
+            <i class="fa fa-list"></i>
+            目录
+
+        </div>
+
+
+        <div class="js-toc">
+
+        </div>
+
+
+    </div>
+
+</aside>
       
       <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
         <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
@@ -36,7 +57,10 @@
             <p class="entry-census"><%= date(post.date, 'YYYY-M-D HH:MM') %></p>
             <hr>
           </header>
-        <% } %>
+                <% } %>
+        <div class="entry-content">
+          <%- post.content %>
+        </div>
         <!-- .entry-content -->
         <footer class="post-footer">
           <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
@@ -62,19 +86,7 @@
         </footer><!-- .entry-footer -->
       </article>
       <!-- #post-## -->
-      <div class="toc-container">
-        <div class="toc">
-          <div class="toc-title">
-            <i class="fa fa-list"></i>
-            目录
-          </div>
-
-          <%- toc(post.content,{
-            list_number:true,
-            max_depth:4
-          }) %>
-        </div>
-      </div>
+      
       <section class="post-squares nextprev">
         <% if (post.prev){ %>
           <div class="post-nepre half previous">
@@ -111,11 +123,11 @@
       </section>
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-          <a href="http://127.0.0.1/wordpress/?author=1" class="profile gravatar"><img src="http://gravatar.shino.cc/avatar/a2897ea8e93cf772b0fb482ac8951cc2?s=96&amp;d=mm&amp;r=g" itemprop="image" alt="hojun" height="70" width="70"></a>
+          <a href="https://tz201.github.io" class="profile gravatar"><img src="/img/avatar.webp" itemprop="image" alt="tz291" height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
-            <a href="http://127.0.0.1/wordpress/?author=1" itemprop="url" rel="author">hojun</a>
+            <a href="https://tz201.github.io" itemprop="url" rel="author">tz201</a>
             </h3>
           </div>
         </div>

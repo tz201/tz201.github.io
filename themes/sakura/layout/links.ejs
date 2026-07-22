@@ -2,7 +2,15 @@
 </div>
 <div class="pattern-center ">
   <div class="pattern-attachment-img">
-    <img src="<%= post.photos[0]%>" data-src="<%= post.photos[0]%>" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
+    <% if (page.photos && page.photos.length){ %>
+
+<img src="<%= page.photos[0] %>"
+     data-src="<%= page.photos[0] %>"
+     class="lazyload"
+     onerror="imgError(this,3)"
+     style="width:100%;height:100%;object-fit:cover;pointer-events:none;">
+
+<% } %>
   </div>
   <header class="pattern-header ">
     <h1 class="entry-title">
@@ -21,9 +29,9 @@
     4、头像（HTTPS*，可在评论区上传）</p>
     <p>
       For Example：<br>
-      ★ Name: Mashiro<br>
-      ★ Bio: 樱花庄的白猫<br>
-      ★ URL: https://2heng.xin<br>
+      ★ Name: tz201<br>
+      ★ Bio: tangent一枚 不可爱捏<br>
+      ★ URL: https://tz201.github.io<br>
       ★ Avatar: <a href="https://view.moezx.cc/image/6vRT" target="_blank" rel="nofollow">
       获取嵌入代码</a>
     </p>
