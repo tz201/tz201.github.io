@@ -27,6 +27,7 @@
     "hexo-toc": "^1.1.0",
     "live2d-widget-model-koharu": "^1.0.5",
     "markdown-it-anchor": "^9.2.1",
+    "markdown-it-katex": "^2.0.3",
     "tocbot": "^4.36.8"
   }
 }
